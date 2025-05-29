@@ -8,21 +8,22 @@ $$\chi\frac{\partial^{2} u}{\partial t^{2}}+ \sigma\frac{\partial u}{\partial t}
 
     С краевыми условиями:
 
-$$ \left. u \right|_{S_1} = u_g, $$
-$$ \left. \lambda\frac{\partial u}{\partial n} \right|_{S_2} = \theta, $$
-$$ \left. \lambda\frac{\partial u}{\partial n} \right|_{S_3} + \beta \left( \left. u \right|_{S_3} - u_{\beta}\right) = 0 $$
+$$ \left. u \right|\_{S_1} = u_g, $$
+$$ \left. \lambda\frac{\partial u}{\partial n} \right|\_{S_2} = \theta, $$
+$$ \left. \lambda\frac{\partial u}{\partial n} \right|\_{S_3} + \beta \left( \left. u \right|\_{S_3} - u_{\beta}\right) = 0 $$
 
     и начальными условиями:
 
-$$ \left. u \right|_{t = t_0} = u^0, \hspace{0.5cm} \left. \frac{\partial u}{\partial t} \right|_{t = t_0} = u_0^{'}$$
+$$ \left. u \right|\_{t = t_0} = u^0, \hspace{0.5cm} \left. \frac{\partial u}{\partial t} \right|\_{t = t_0} = {u'}_0$$
 
-    Схема Кранка-Николсона по времени, выведенная в отчёте:
+    Схема Кранка-Николсона по времени:
+> *формула выведена в [отчёте](report.pdf)*
 
 $$ \chi \left( \frac{2}{\Delta t \Delta t_1}u^{j-2} - \frac{2}{\Delta t_1 \Delta t_0}u^{j-1} + \frac{2}{\Delta t \Delta t_0}u^{j} \right) +  \sigma\frac{u^{j} - u^{j-2}}{\Delta t} - div(\lambda grad \frac{u^{j} + u^{j-2}}{2}) = \frac{f^{j} + f^{j-2}}{2}$$
 
     где
 
-$$ \Delta t = t_{j} - t_{j-2}, \hspace{0,5cm} \Delta t_1 = t_{j-1} - t_{j-2}, \hspace{0,5cm} \Delta t_0 = t_j - t_{j-1}$$
+$$ \Delta t = t_{j} - t_{j-2}, \hspace{0.5cm} \Delta t_1 = t_{j-1} - t_{j-2}, \hspace{0.5cm} \Delta t_0 = t_j - t_{j-1}$$
 
 ***Дополнительные ограничения по задаче***:
 
